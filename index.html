@@ -41,7 +41,7 @@
   .text-signup:hover { color: #FF5A1A; background: rgba(255,107,53,0.1); }
   .text-signup:hover .dropdown-icon { color: #FF5A1A; }
 
-  .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 7rem 2rem 4rem; position: relative; overflow: hidden; }
+  .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 11rem 2rem 4rem; position: relative; overflow: hidden; }
   .hero > * { position: relative; z-index: 1; }
   .hero > .hero-gradient-overlay {
     position: absolute;
@@ -51,15 +51,15 @@
     pointer-events: none;
   }
   .hero::before { content: ''; position: absolute; top: -200px; left: 50%; transform: translateX(-50%); width: 700px; height: 700px; background: radial-gradient(circle, rgba(255,107,26,0.12) 0%, transparent 70%); pointer-events: none; z-index: 0; }
-  .hero-tag { display: inline-block; border: 1px solid var(--orange); color: #FFFFFF; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.35rem 1rem; border-radius: 100px; margin-bottom: 2rem; animation: fadeUp 0.6s ease both; text-shadow: 2px 2px 6px rgba(0,0,0,0.9); }
+  .hero-tag { display: inline-block; border: 1px solid var(--orange); color: #FFFFFF; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.35rem 1rem; border-radius: 100px; margin-bottom: 2rem; animation: fadeUp 0.6s ease both; text-shadow: 2px 2px 6px rgba(0,0,0,0.9); margin-top: auto; }
   .hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.5rem, 9vw, 7.5rem); line-height: 0.95; letter-spacing: 0.04em; margin-bottom: 1.5rem; animation: fadeUp 0.6s 0.1s ease both; color: #FFFFFF; text-shadow: 2px 2px 6px rgba(0,0,0,0.9); }
   .hero h1 span { color: var(--orange); text-shadow: 2px 2px 6px rgba(0,0,0,0.9); }
   .hero-sub { font-size: clamp(1rem, 2vw, 1.25rem); color: #FFFFFF; max-width: 560px; line-height: 1.7; margin-bottom: 2.5rem; animation: fadeUp 0.6s 0.2s ease both; font-weight: 400; text-shadow: 2px 2px 6px rgba(0,0,0,0.9); }
   .hero-btn { display: inline-block; background: var(--orange); color: #fff; padding: 1rem 2.5rem; border-radius: 100px; font-size: 1rem; font-weight: 500; text-decoration: none; transition: background 0.2s, transform 0.15s; animation: fadeUp 0.6s 0.3s ease both; border: none; cursor: pointer; }
   .hero-btn:hover { background: var(--orange-dim); transform: translateY(-2px); }
-  .hero-note { margin-top: 1rem; font-size: 0.8rem; color: var(--muted); animation: fadeUp 0.6s 0.4s ease both; }
+  .hero-note { margin-top: 1rem; font-size: 0.8rem; color: var(--muted); animation: fadeUp 0.6s 0.4s ease both; margin-bottom: auto; }
   .strip { background: var(--orange); padding: 0.9rem 2rem; text-align: center; font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 0.2em; color: #fff; }
-  .section { padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; scroll-margin-top: 100px; }
+  .section { padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; scroll-margin-top: 60px; }
   .section-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange); margin-bottom: 1rem; }
   .section h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.05; letter-spacing: 0.04em; margin-bottom: 1.5rem; color: #FFFFFF; text-shadow: 2px 2px 6px rgba(0,0,0,0.9); }
   .problem-text { font-size: 1.1rem; color: #FFFFFF; max-width: 680px; line-height: 1.8; font-weight: 400; text-shadow: 2px 2px 6px rgba(0,0,0,0.9); }
@@ -87,7 +87,7 @@
   .modal-points li { display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.85rem; color: #FFFFFF; line-height: 1.6; padding: 0.75rem; background: var(--dark3); border-radius: 10px; border: 1px solid var(--border); font-weight: 400; text-shadow: 2px 2px 6px rgba(0,0,0,0.9); }
   .modal-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--orange); flex-shrink: 0; margin-top: 0.5rem; }
   .modal-points li strong { color: var(--text); font-weight: 500; }
-  .cases { background: var(--dark2); padding: 6rem 2rem; scroll-margin-top: 100px; }
+  .cases { background: var(--dark2); padding: 6rem 2rem; scroll-margin-top: 60px; }
   .cases-inner { max-width: 1100px; margin: 0 auto; }
   .cases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
   .case-card { background: var(--dark3); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; position: relative; overflow: hidden; }
@@ -95,14 +95,14 @@
   .case-num { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: rgba(255,107,26,0.15); line-height: 1; margin-bottom: 0.5rem; }
   .case-title { font-weight: 500; font-size: 1rem; margin-bottom: 0.75rem; color: var(--orange); text-shadow: 2px 2px 6px rgba(0,0,0,0.9); }
   .case-text { font-size: 0.9rem; color: #FFFFFF; line-height: 1.7; font-weight: 400; text-shadow: 2px 2px 6px rgba(0,0,0,0.9); }
-  .phases { padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; scroll-margin-top: 100px; }
+  .phases { padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; scroll-margin-top: 60px; }
   .phases-list { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 3rem; }
   .phase-row { display: grid; grid-template-columns: 140px 1fr; gap: 2rem; align-items: start; padding: 2rem; background: var(--dark2); border: 1px solid var(--border); border-radius: 16px; }
   .phase-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 0.1em; color: var(--orange); padding-top: 0.2rem; }
   .phase-tag { display: inline-block; background: rgba(255,107,26,0.12); color: var(--orange); font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 100px; font-weight: 500; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
   .phase-title { font-weight: 500; font-size: 1.05rem; margin-bottom: 0.5rem; color: #FFFFFF; text-shadow: 2px 2px 6px rgba(0,0,0,0.9); }
   .phase-text { font-size: 0.88rem; color: #FFFFFF; line-height: 1.7; font-weight: 400; text-shadow: 2px 2px 6px rgba(0,0,0,0.9); }
-  .form-section { background: var(--dark2); padding: 6rem 2rem; text-align: center; scroll-margin-top: 100px; }
+  .form-section { background: var(--dark2); padding: 6rem 2rem; text-align: center; scroll-margin-top: 60px; }
   .form-inner { max-width: 600px; margin: 0 auto; }
   .form-section h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 6vw, 4.5rem); letter-spacing: 0.04em; line-height: 1; margin-bottom: 1rem; color: #FFFFFF; text-shadow: 2px 2px 6px rgba(0,0,0,0.9); }
   .form-section h2 span { color: var(--orange); }
@@ -129,6 +129,9 @@
   .footer-text { font-size: 0.8rem; color: var(--muted); line-height: 1.7; }
   .footer-text a { color: var(--muted); text-decoration: underline; }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  @media (min-width: 1024px) {
+    .section, .cases, .phases, .form-section { scroll-margin-top: 0px; }
+  }
   @media (max-width: 800px) {
     .nav-links { display: none; }
   }
@@ -338,15 +341,14 @@
           <input type="text" id="address" placeholder="Street address, Austin, TX" required />
           <div style="font-size:0.72rem;color:var(--muted);margin-top:0.4rem;line-height:1.5;">Required for all members. Split Mic is currently limited to the Austin network only.</div>
         </div>
-        <div class="form-group"><label>What is the number 1 problem you want Split Mic to solve for you?</label><textarea id="problem" placeholder="Tell us in your own words. What is the biggest headache in Austin's music scene that you wish someone would fix?" required></textarea></div>
+        <div class="form-group"><label>What is the number 1 problem you want Split Mic to solve for you?</label><textarea id="problemText" placeholder="Tell us in your own words. What is the biggest headache in Austin's music scene that you wish someone would fix?" required></textarea></div>
         <button type="submit" class="submit-btn" id="submitBtn">Get My Early Access Spot</button>
         <p class="form-privacy">We will never share your info. No spam. Just updates on when Split Mic is ready for you.</p>
       </form>
     </div>
     <div class="success-box" id="successBox">
-      <div class="success-icon">✓</div>
-      <h3>You Are In.</h3>
-      <p>We got your info and you are on the early access list. We will reach out as soon as Split Mic is ready for you.<br><br>Thank you for believing in this. Austin's music scene is about to change.</p>
+      <h3>You're In! 🎉</h3>
+      <p>Thanks for joining SplitMic's early access list.<br>We're launching June 1st exclusively for Austin.<br><br>Check your email for next steps.<br>We'll reach out with your login on June 1st.</p>
     </div>
   </div>
 </div>
@@ -467,15 +469,48 @@ function scrollToForm(e) {
   }, 600);
 }
 
-document.getElementById('signupForm').addEventListener('submit', function(e) {
+document.getElementById('signupForm').addEventListener('submit', async function(e) {
   e.preventDefault();
   const btn = document.getElementById('submitBtn');
+  const originalText = btn.textContent;
   btn.disabled = true;
   btn.textContent = 'Submitting...';
-  setTimeout(() => {
+
+  const categorySelect = document.getElementById('category');
+  const playerType = categorySelect.options[categorySelect.selectedIndex].text;
+
+  const formData = {
+    fullName: document.getElementById('fullName').value,
+    email: document.getElementById('email').value,
+    playerType: playerType,
+    austinAddress: document.getElementById('address').value,
+    problem: document.getElementById('problemText').value
+  };
+
+  try {
+    await fetch('https://n8n.srv1519708.hstgr.cloud/webhook/470da37c-5c5e-4ab2-b5a5-6470c147b73c', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+
     document.getElementById('formBox').style.display = 'none';
     document.getElementById('successBox').style.display = 'block';
-  }, 800);
+    document.getElementById('signupForm').reset();
+
+    setTimeout(() => {
+      document.getElementById('successBox').style.display = 'none';
+      document.getElementById('formBox').style.display = 'block';
+    }, 5000);
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    alert('There was an error submitting the form. Please try again.');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = originalText;
+  }
 });
 
 // Dropdown Menu Logic
